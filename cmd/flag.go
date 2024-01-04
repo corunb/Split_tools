@@ -7,14 +7,13 @@ import (
 
 var Number int
 var File string
-
-
+var EncodeFile string
 
 func init() {
-	flag.IntVar(&Number,"n",32,"设置长度进行切割，默认32")
-	flag.StringVar(&File, "f","","指定分割的文本")
+	flag.IntVar(&Number, "n", 64, "设置长度进行切割，默认32")
+	flag.StringVar(&File, "f", "", "指定分割的文本")
+	flag.StringVar(&EncodeFile, "e", "", "指定base64编码文件")
 	flag.Parse()
-
 
 	logo := `
   ____        _ _ _      _              _     
@@ -29,7 +28,4 @@ func init() {
 `
 	color.HiGreen.Println(logo)
 
-
 }
-
-
