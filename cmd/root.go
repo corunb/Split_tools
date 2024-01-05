@@ -31,9 +31,8 @@ func Run() {
 
 // Partitions  分割木马文件并生成写入命令
 func Partitions(str string, Number int) {
-	//替换 " 为 '
-	newstrs := strings.Replace(str, `"`, `'`, -1)
-	wins := SplitSubN(newstrs, Number)
+	//newstrs := strings.Replace(str, `"`, `%22`, -1)
+	wins := SplitSubN(str, Number)
 	fmt.Println("windows写入多个文件后合并命令：")
 	Write("windows写入多个文件后合并命令：\n", 0)
 

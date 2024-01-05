@@ -23,7 +23,7 @@ func init() {
  |____/| .__/|_|_|\__|___\__\___/ \___/|_|___/
        |_|          |_____|                   
 
-[+] code by Corun V1.0
+[+] code by Corun V1.1
 [+] https://github.com/corunb/Split_tools
 `
 	color.HiGreen.Println(logo)
